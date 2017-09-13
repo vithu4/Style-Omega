@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.styleomega.styleomegafashion.MainActivity"
+    android:background="@drawable/mainpic"
+    android:scaleType="center">
+
+    <Button
+        android:id="@+id/BLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="171dp"
+        android:layout_marginStart="84dp"
+        android:onClick="GoToLogOrRegisterLayout"
+        android:text="Login"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="296dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/BRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:onClick="GoToLogOrRegisterLayout"
+        android:text="Register"
+        android:layout_alignBaseline="@+id/BLogin"
+        android:layout_alignBottom="@+id/BLogin"
+        android:layout_toEndOf="@+id/BLogin" />
+
+    <Button
+        android:id="@+id/GuestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/BRegister"
+        android:layout_marginTop="36dp"
+        android:onClick="GoToLogOrRegisterLayout"
+        android:text="Continue as a Guest" />
+
+</RelativeLayout>

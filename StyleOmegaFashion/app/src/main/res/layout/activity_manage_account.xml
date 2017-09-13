@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.styleomega.styleomegafashion.manageAccount"
+    android:background="@drawable/loginandreg2">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ETMANewPass"
+        android:layout_alignBottom="@+id/ETMANewPass"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:text="New Password"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ETMANAME"
+        android:layout_alignBottom="@+id/ETMANAME"
+        android:layout_alignStart="@+id/textView5"
+        android:text="Name"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ETMAUsername"
+        android:layout_alignBottom="@+id/ETMAUsername"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Username"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/textViewTelNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ETMATelNo"
+        android:layout_alignBottom="@+id/ETMATelNo"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Tel No"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ETMAEmail"
+        android:layout_alignBottom="@+id/ETMAEmail"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Email"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ETMAOldPass"
+        android:layout_alignBottom="@+id/ETMAOldPass"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Password"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/ETMANewPass"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ETMAOldPass"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <EditText
+        android:id="@+id/ETMAOldPass"
+        android:layout_width="200dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ETMAEmail"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <EditText
+        android:id="@+id/ETMANAME"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ETMAUsername"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <EditText
+        android:id="@+id/ETMATelNo"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ETMANAME"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <EditText
+        android:id="@+id/ETMAEmail"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ETMATelNo"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <EditText
+        android:id="@+id/ETMAUsername"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <Button
+        android:id="@+id/BUpdatAc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="70dp"
+        android:onClick="updateUserInformation"
+        android:text="Update" />
+
+</RelativeLayout>
+</ScrollView>
